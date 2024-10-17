@@ -11,13 +11,17 @@
     <div class="container">
         <h1>Kitchen Inventory</h1>
         <input type="text" id="barcode" placeholder="Scan barcode or enter product name" />
+        <button id="addItemBtn">Add Item</button>
         <button id="scanBtn">Scan Barcode</button>
-        <div id="camera" style="display: none;">
-            <video id="preview" width="300" height="200"></video>
+
+        <div id="camera" style="display: none; position: relative;">
+            <video id="preview" width="300" height="200" style="border: 1px solid #ccc;"></video>
+            <div class="overlay">
+                <div class="instructions">Align barcode within the frame</div>
+                <div class="barcode-frame"></div>
+            </div>
         </div>
 
-        <button id="addItemBtn">Add Item</button>
-        
         <h2>Inventory</h2>
         <ul id="inventoryList"></ul>
     </div>

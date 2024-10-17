@@ -59,3 +59,31 @@ li button {
 li button:hover {
     background-color: #c82333;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.instructions {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.barcode-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 40px; /* Adjust based on your needs */
+    border: 2px dashed white; /* or any color */
+    transform: translate(-50%, -50%);
+}
